@@ -1,8 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TaskManagement.Infrastructure.Data;
 using TaskManagemnt.Entities;
 using TaskManagemnt.UseCases.Interfaces;
-namespace TaskManagement.Infrastructure.Repositories;
+namespace TaskManagemnt.Infrastructure.Repositories;
 public class TaskRepository : ITaskRepository
 {
     private readonly TaskDbContext _context;
