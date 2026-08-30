@@ -47,7 +47,6 @@ public class TasksController : ControllerBase
         existTask.Title = taskItem.Title;
         existTask.Description = taskItem.Description;
         existTask.DueDate = taskItem.DueDate;
-        existTask.CreateDate = taskItem.CreateDate;
         existTask.IsCompleted = taskItem.IsCompleted;
 
         await _taskService.UpdateTaskAsync(existTask);
