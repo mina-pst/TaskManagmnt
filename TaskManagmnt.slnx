@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="TaskManagemnt.Api/TaskManagemnt.Api.csproj" />
+  <Project Path="TaskManagemnt.Entities/TaskManagemnt.Entities.csproj" />
+  <Project Path="TaskManagemnt.Infrastructure/TaskManagemnt.Infrastructure.csproj" />
+  <Project Path="TaskManagemnt.InterfaceAdapters/TaskManagemnt.InterfaceAdapters.csproj" />
+  <Project Path="TaskManagemnt.Tests/TaskManagemnt.Tests.csproj" />
+  <Project Path="TaskManagemnt.UseCases/TaskManagemnt.UseCases.csproj" />
+</Solution>
