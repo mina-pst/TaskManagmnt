@@ -2,6 +2,7 @@
 using TaskManagemnt.Entities;
 using TaskManagemnt.UseCases.Interfaces;
 namespace TaskManagemnt.Infrastructure.Repositories;
+
 public class TaskRepository : ITaskRepository
 {
     private readonly TaskDbContext _context;
@@ -23,10 +24,10 @@ public class TaskRepository : ITaskRepository
 
         return Task.CompletedTask;
     }
-    public Task DeleteAsync(TaskItem taskItem)
+    public async Task DeleteAsync(int id)
     {
-        _context.Tasks.Remove(taskItem);
-
-        return Task.CompletedTask;
+        var taskItem = await GetByIdAsync(id);
+        if (taskItem != null)
+            _context.Tasks.Remove(taskItem);
     }
 }
