@@ -12,12 +12,17 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="swashbuckle.aspnetcore" Version="10.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TaskManagemnt.Infrastructure\TaskManagemnt.Infrastructure.csproj" />
     <ProjectReference Include="..\TaskManagemnt.InterfaceAdapters\TaskManagemnt.InterfaceAdapters.csproj" />
     <ProjectReference Include="..\TaskManagemnt.UseCases\TaskManagemnt.UseCases.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
