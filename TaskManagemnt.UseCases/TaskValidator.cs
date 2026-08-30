@@ -9,7 +9,6 @@ namespace TaskManagemnt.UseCases
         {
             RuleFor(t => t.Title).NotEmpty().MaximumLength(200);
             RuleFor(d=> d.Description).MaximumLength(1000);
-            RuleFor(c => c.CreateDate).NotEmpty();
         }
     }
 }

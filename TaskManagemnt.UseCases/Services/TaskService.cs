@@ -17,6 +17,7 @@ namespace TaskManagemnt.UseCases.Services
         }
         public async Task<int> AddTaskAsync(TaskItem item)
         {
+            item.CreateDate = DateTime.Now;
             await _taskRepository.AddAsync(item);
             await _unitOfWork.SaveChangesAsync();
 
